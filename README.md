@@ -1,7 +1,7 @@
 # 🛍️ ReviewSense Analytics — YouTube Product Review & Sentiment Intelligence 
 
 > A specialized YouTube product review and commercial analytics platform.  
-> Analyzes **any product review video** across tech, gadgets, gaming, beauty  & skincare, food & drinks, fashion, automotive, home appliances, unboxings, and marketing ad campaigns — with automated validation that **strictly filters out pure academic lectures**.  
+> Analyzes **any product review video** across tech, gadgets, gaming, beauty  & skincare, food & drinks, fashion,  automotive, home appliances, unboxings, and marketing ad campaigns — with automated validation that **strictly filters out pure academic lectures**.  
 > Evaluates viewer comments (English and Roman Urdu) with sentiment intelligence, purchase intent & complaint signals, brand follower segmentation, and visualises results in an interactive web dashboard.
 
 ---
