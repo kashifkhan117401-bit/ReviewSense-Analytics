@@ -1,7 +1,7 @@
 """
 gui_server.py
 =============
-Local web dashboard server for YouTube Product Review & Commercial Analyzer.
+Local web dashboard server for YouTube Product Review & Commercial Analyzer. 
 Analyzes ANY product review video — tech, beauty, food, gaming, fashion, automotive,
 home appliances, marketing ads, and more. Strictly filters out pure educational/academic
 lectures that have no product or commercial angle.
