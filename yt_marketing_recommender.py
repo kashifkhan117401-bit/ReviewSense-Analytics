@@ -1,5 +1,5 @@
 """
-yt_edu_recommender.py (yt_marketing_recommender.py)
+yt_edu_recommender.py (yt_marketing_recommender.py) 
 ===================================================
 Recommends the best marketing YouTube channels and video reviews by analysing
 viewer comments with sentiment analysis, purchase intent, and ad friction signals.
