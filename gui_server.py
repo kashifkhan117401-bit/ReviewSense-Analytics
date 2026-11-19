@@ -79,7 +79,7 @@ ACADEMIC_EDU_TERMS: list[str] = [
 
 # --- Product / Commercial / Review Terms for Validation ---
 # Accepts ANY product review, unboxing, comparison, marketing ad, brand campaign, etc.
-PRODUCT_REVIEW_TERMS: list[str] = [
+PRODUCT_REVIEW_TERMS: list[str] = [ 
     # Generic review / product signals
     "review", "unboxing", "unbox", "hands on", "hands-on", "first look",
     "first impression", "impressions", "worth it", "should you buy",
