@@ -36,7 +36,7 @@ from urllib.parse import parse_qs, urlparse
 import requests
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-# Load environment variables from .env
+# Load environment variables from .env 
 def _load_dotenv() -> None:
     env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
     if os.path.isfile(env_path):
