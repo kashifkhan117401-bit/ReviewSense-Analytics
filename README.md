@@ -8,7 +8,7 @@
 
 ## 📦 Project Structure
 
-```
+``` 
 Project/
 ├── gui_server.py              # Local dashboard web server with product review validation
 ├── yt_marketing_recommender.py# CLI tool — product/marketing channel batch analysis & discovery
