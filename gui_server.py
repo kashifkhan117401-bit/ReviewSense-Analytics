@@ -1,26 +1,3 @@
-"""
-gui_server.py
-=============
-Local web dashboard server for YouTube Product Review & Commercial Analyzer. 
-Analyzes ANY product review video — tech, beauty, food, gaming, fashion, automotive,
-home appliances, marketing ads, and more. Strictly filters out pure educational/academic
-lectures that have no product or commercial angle.
-Provides interactive visual graphs, sentiment breakdowns, product review scores (0-100),
-Roman Urdu purchase intent / friction signals, and follower vs non-follower audience analysis.
-
-FOLLOWER DETECTION STRATEGY
-----------------------------
-YouTube Data API v3 does NOT expose subscriber status per comment.
-We use two proxy signals to separate "Brand Followers / Advocates" from "Casual Prospects":
-
-  1. REPEAT COMMENTER  – A commenter whose channel-ID appears more than once
-     in the fetched dataset (they consistently engage → likely brand subscriber).
-  2. HIGH-LIKE COMMENTER – A commenter whose comment(s) received >= 5 likes
-     (community recognises them → likely active brand follower).
-
-Commenters matching EITHER signal are labelled "Brand Follower (Proxy)".
-All others are labelled "Casual Prospect / Viewer".
-"""
 
 from __future__ import annotations
 
@@ -562,7 +539,7 @@ def _score_subset(subset: list[dict]) -> dict:
     lw_sentiment  = sum(c["sentiment_score"] * float(c["likes"] + 1) for c in subset) / total_weights
 
     sentiment_0_100 = (lw_sentiment + 1.0) / 2.0 * 100.0
-    intent_pct   = (intent_cnt   / n) * 100.0
+    intent_pct   = (intent_cnt   / n) * 100.0 
     friction_pct = (friction_cnt / n) * 100.0
 
     marketing_score = (
