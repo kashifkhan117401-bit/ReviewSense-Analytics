@@ -35,8 +35,7 @@ _load_dotenv()
 API_KEY = os.environ.get("YOUTUBE_API_KEY", "").strip()
 YT_API_BASE = "https://www.googleapis.com/youtube/v3"
 
-# --- Educational / Academic Terms for Strict Rejection ---
-# ONLY pure academic lectures (no product angle) are rejected.
+
 ACADEMIC_EDU_TERMS: list[str] = [
     "physics lecture", "chemistry lecture", "mathematics lecture",
     "calculus tutorial", "algebra tutorial", "geometry tutorial",
